@@ -1,0 +1,186 @@
+* {
+    font-family: tahoma, sans-serif;
+}
+
+body {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+#big-box{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+#title-box {
+    margin: 0 auto;
+    width: 500px;
+    height: 120px;
+    background-color: #C98474;
+    border-radius: 0 0 50px 50px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#title {
+    color: #fff;
+}
+
+.container {
+    padding: 25px;
+    width: 45%;
+    margin: auto;
+    background-color: #C98474;
+    box-shadow: 2px 2px 5px black;
+}
+
+#footer{
+    display: block;
+    bottom: 0;
+    border-radius: 50px 50px 0 0;
+    color: #fff;
+}
+
+.icon-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.show {
+    opacity: 1 !important;
+}
+
+#griglia{
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+#griglia>div {
+    width: 120px;
+    height: 120px;
+    margin: 10px;
+    background-color: #874C62;
+    border: none;
+    border-radius: 10px;
+    box-shadow: inset 2px 2px 5px black;
+}
+
+.timer {
+    padding: 1rem 0;
+    font-size: 2em;
+}
+
+.icon {
+    font-size: 5rem;
+    text-align: center;
+    visibility: visible !important;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    cursor: pointer;
+}
+
+.disabled {
+    pointer-events: none;
+    cursor: wait;
+}
+
+.show {
+    animation: rotate-scale-up 0.65s linear both;
+    animation-duration: .3s;
+    background-color: #A7D2CB;
+    border: none;
+    border-radius: 10px;
+}
+
+.find {
+    animation: right-one 0.5s;
+    animation-duration: .5s;
+    background-color: #F2D388;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px black;
+}
+
+.button {
+    color: white;
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #975970;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #874C62;
+    border: none;
+}
+
+#modal {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.9);
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+#modal.active {
+    display: flex;
+}
+
+#modal h2 {
+    margin-top: 2rem;
+}
+
+
+@keyframes right-one {
+
+    /* animazione quando si indovina */
+    0% {
+        transform: perspective(400px) rotateY(0);
+        animation-timing-function: ease-out;
+    }
+
+    40% {
+        transform: perspective(400px) translateZ(150px) rotateY(170deg);
+        animation-timing-function: ease-out;
+    }
+
+    50% {
+        transform: perspective(400px) translateZ(150px) rotateY(190deg) scale(1);
+        animation-timing-function: ease-in;
+    }
+
+    80% {
+        transform: perspective(400px) rotateY(360deg) scale(.95);
+        animation-timing-function: ease-in;
+    }
+
+    100% {
+        transform: perspective(400px)
+    }
+}
+
+@keyframes rotate-scale-up {
+    0% {
+        transform: scale(1) rotateZ(0);
+    }
+
+    50% {
+        transform: scale(2) rotateZ(180deg);
+    }
+
+    100% {
+        transform: scale(1) rotateZ(360deg);
+    }
+}

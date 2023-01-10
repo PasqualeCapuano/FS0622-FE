@@ -1,0 +1,7 @@
+@function marginAdd($multiply) {
+    @return $side-margin*$multiply;
+}
+
+@function em($multiply) {
+    @return $fontInit*$multiply;
+}

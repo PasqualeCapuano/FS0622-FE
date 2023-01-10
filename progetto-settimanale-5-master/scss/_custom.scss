@@ -1,0 +1,90 @@
+$main-colour: #620fe8;
+$secondary-colour: #fa2e57;
+$background-grey: #F5F5F5;
+
+//--------------------------------------nav bar
+
+.navbar {
+    background: $main-colour;
+    color: $main-colour;
+
+    .nav-link {
+        color: $secondary-colour;
+
+        &:hover {
+            color: lighten($secondary-colour, $amount: 20%);
+        }
+    }
+}
+
+.navbar-toggler {
+    color: $secondary-colour;
+}
+
+//--------------------------------------hero
+
+#hero {
+    background-image: url("../img/pexels-aleksandar-pasaric-325185.jpg");
+    background-color: $background-grey;
+    background-position-y: 35%;
+    padding-top: 80px;
+    padding-bottom: 200px;
+}
+
+#btn {
+    background-color: $main-colour;
+    color: $background-grey;
+
+    &:hover {
+        background-color: lighten($main-colour, $amount: 10%);
+    }
+}
+
+h1 {
+    font-size: 55px;
+    font-weight: 300;
+}
+
+//--------------------------------------icons sections
+
+#icons-section {
+    background-color: $background-grey;
+}
+
+.subtitle {
+    font-weight: 300;
+    font-size: 45px;
+}
+
+//--------------------------------------companies
+
+.companies {
+    width: 140px;
+}
+
+//--------------------------------------carousel
+
+.carouselImg {
+    width: 100px;
+}
+
+.customerName {
+    font-weight: 600;
+    font-size: 24px;
+}
+
+.lorem-icon {
+    font-size: 40px;
+}
+
+.quote-icon {
+    color: $secondary-colour;
+    font-size: 32px;
+}
+
+//--------------------------------------footer
+
+footer{
+    background-color: $main-colour;
+    color: $background-grey;
+}

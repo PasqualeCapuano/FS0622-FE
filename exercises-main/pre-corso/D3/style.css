@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Prata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@1,400;1,600&display=swap');
+
+.image-container{
+    background-image: url(https://images.unsplash.com/photo-1660842015413-26dadf8cd03c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1932&q=80);
+}
+
+body{
+    margin: 0;
+}
+
+.main-section{
+    padding: 20px;
+}
+
+.input-field{
+    display: block;
+    width: 100%;
+}
+        
+#footer-wrapper{
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}

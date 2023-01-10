@@ -1,0 +1,8 @@
+<div class="container">
+<div class="card my-4" [ngClass]="{ 'bg-warning': p!.type == 'news', 'bg-info': p!.type == 'education', 'bg-dark': p!.type == 'politic', 'text-white': p!.type == 'politic' }">
+  <h2 class="card-header">{{p!.title}}</h2>
+  <p class="card-body">{{p!.body}}</p>
+  <p class="fw-bold text-end me-5">Tipo: {{p!.type}}</p>
+  <p class="fw-light text-end me-5">Autore: {{p!.author}}</p>
+</div>
+</div>

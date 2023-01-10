@@ -1,0 +1,14 @@
+{
+  "name": "day-20",
+  "version": "1.0.0",
+  "description": "a project to practice SASS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pasquale Capuano",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.55.0"
+  }
+}

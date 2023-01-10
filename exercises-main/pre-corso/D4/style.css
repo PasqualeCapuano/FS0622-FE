@@ -1,0 +1,14 @@
+.child{
+    width: 100px;
+    height: 100px;
+    color: white;
+    background-color: orange;
+    margin: 5px;
+    padding: 10px;
+    font-size: 3em;
+}
+
+#container{
+    display: flex;
+    justify-content: center;
+}

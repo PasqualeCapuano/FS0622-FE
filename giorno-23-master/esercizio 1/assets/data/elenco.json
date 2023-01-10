@@ -1,0 +1,82 @@
+{
+    "utentiCorso": [
+        {
+            "id": "01",
+            "nome": "Gaetano",
+            "cognome": "Quarto",
+            "elencoLibriLetti": [
+                {
+                    "libro1": "Harry Potter e la pietra filosofale",
+                    "libro2": "Harry Potter e l'ordine della fenice",
+                    "libro3": "it"
+                }
+            ],
+            "elencoFilm": [
+                {
+                    "film1": "Avengers",
+                    "film2": "Avatar",
+                    "film3": "Harry Potter"
+                }
+            ],
+            "elencoVideogiochi": [
+                {
+                    "videogioco1": "God of War",
+                    "videogioco2": "Overwatch",
+                    "videogioco3": "League of Legends"
+                }
+            ]
+        },
+        {
+            "id": "02",
+            "nome": "Pasquale",
+            "cognome": "Capuano",
+            "elencoLibriLetti": [
+                {
+                    "libro1": "Harry Potter e la camera dei segreti",
+                    "libro2": "Le cronache di narnia",
+                    "libro3": "Eragon"
+                }
+            ],
+            "elencoFilm": [
+                {
+                    "film1": "Avengers End Game",
+                    "film2": "Avatar",
+                    "film3": "La principessa e il ranocchio"
+                }
+            ],
+            "elencoVideogiochi": [
+                {
+                    "videogioco1": "Call of Duty",
+                    "videogioco2": "Escape from Tarkov",
+                    "videogioco3": "Battlefield 3"
+                }
+            ]
+        },
+        {
+            "id": "03",
+            "nome": "Luca",
+            "cognome": "Lattanzi",
+            "elencoLibriLetti": [
+                {
+                    "libro1": "cinquanta sfumature di rosso",
+                    "libro2": "Cinquanta sfumature di nero",
+                    "libro3": "Cinquanta sfumature di grigio"
+                }
+            ],
+            "elencoFilm": [
+                {
+                    "film1": "Rapunzel",
+                    "film2": "Cenerentola",
+                    "film3": "Barbie il lago dei cigni"
+                }
+            ],
+            "elencoVideogiochi": [
+                {
+                    "videogioco1": "I puffi",
+                    "videogioco2": "Hello Kitty Online",
+                    "videogioco3": "The sims"
+                }
+            ]
+        }
+    ]
+}

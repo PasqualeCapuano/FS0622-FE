@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* IMPOSTAZIONI GENERALI */
+
+main{
+    margin: 20px;
+}
+
+
+/* HEADER */
+header{
+    background-color: #6d9fb3;
+    color: white;
+    text-align: center;
+    font-family: 'Raleway';
+    border-bottom: solid 4px;
+    border-color: #467aa5;
+    height: 100%;
+    font-size: 1.8em;
+}
+
+span{
+    color: #6d9fb3;
+    background-color: #ffffff;
+}
+
+
+/* MAIN */
+h1{
+    text-align: center;
+}
+
+h2{
+    text-align: center;
+    text-transform: uppercase;
+    color: #6d9fb3;
+}
+
+strong{
+    color: #6d9fb3;
+}
+
+hr{
+    border: dashed;
+    border-width: 1px;
+    width: 95%;
+}
+
+mark{
+    background-color: #6d9fb3;
+    color: #ffffff;
+}
+
+a{
+    color: rgb(218, 4, 4);
+}
+
+blockquote{
+    padding: 20px;
+    border-radius: 15px;
+    height: 100px;
+    background-color: #d6d6d6;
+}
+
+
+
+/* ELEMENTI NEL MAIN */
+.topPhoto{
+    border: 5px solid #d1d1d1;
+    padding: 10px;
+    border-width: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+    
+}
+
+.topPhoto:hover{
+    background-color: #008fb3;
+    border: solid;
+    border: 5px solid #008fb3;
+    padding: 10px;
+    border-width: 1px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    height: 50%;
+
+}
+
+.jobTitle{
+    color: #000000;
+    text-transform: none;
+}
+
+#citation{
+    color: #000000;
+}
+
+figcaption{
+    margin: 10px;
+    text-align: center;
+}
+
+
+/* FOOTER */
+footer{
+    text-align: center;
+    background-color: #3d3d3d;
+    color: #ffffff;
+    border-top: solid 4px;
+    border-color: #5eabeb;
+}
+
+kbd{
+    color: #ffff00;
+}
+
+small{
+    font-family: 'Raleway';
+}

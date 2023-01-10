@@ -1,0 +1,32 @@
+body {
+  font-family: "Open Sans", sans-serif;
+}
+
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Montserrat", sans-serif;
+}
+
+.bg-personal{
+  background: #0e10b4;
+}
+.container{
+  text-align: center;
+}
+#dieci,#venti,#cinquanta, #logout, #secondiChiam,#numeroChiam,#inoltraChiam,#infoChiamate,#azzeraChiam{
+  display: none;
+}
+
+.bi-info-square-fill {
+  font-size: 16px;
+  padding-right: 10px;
+}
+
+.carousel-item {
+  height: 700px;
+  object-fit: contain ;
+}
+
+.item img {
+  
+}

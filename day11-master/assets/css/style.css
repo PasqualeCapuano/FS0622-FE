@@ -1,0 +1,19 @@
+body{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+fieldset{
+    margin: 0 auto;
+    width: 400px;
+    
+}
+label{
+    
+}
+
+input{
+    margin: 10px;
+    width: 50%;
+}

@@ -1,0 +1,7 @@
+<label>Nome</label>
+<input type="text" class="form-control" [(ngModel)]="newName">
+<label>Cognome</label>
+<input type="text" class="form-control" [(ngModel)]="newSurname">
+<app-eta [(eta)]="newEta"></app-eta>
+<button class="btn btn-primary me-2" (click)="onAddMan()">Aggiungi uomo</button>
+<button class="btn btn-primary me-2" (click)="onAddWoman()">Aggiungi donna</button>

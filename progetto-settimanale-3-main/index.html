@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/css/styles.css">
+  <script src="https://kit.fontawesome.com/a214e0c9e7.js" crossorigin="anonymous"></script>
+
+  <title>Calcolatrice</title>
+</head>
+
+<body>
+
+  <header>
+    <div class="switch">
+      <div class="flicker"></div>
+      <div class="moon"></div>
+    </div>
+  </header>
+
+  <div id="calcolatrice">
+    <form name="form">
+      <td><input type="button" id="power" value="ON/OFF" onclick=""></td>
+      <input id="areaTesto" class="area" name="area" value="">
+      <table id="calc">
+        <tr>
+          <td colspan="2"><input id="cancTutto" type="button" value="AC" onclick="reset()"></td>
+          <td><input type="button" value="C" onclick="cancella();"></td>
+          <td><input type="button" value="/" onclick="dig('/');"></td>
+
+        </tr>
+        <tr>
+          <td><input type="button" value="7" onclick="dig(7);"></td>
+          <td><input type="button" value="8" onclick="dig(8);"></td>
+          <td><input type="button" value="9" onclick="dig(9);"></td>
+          <td><input type="button" value="x" onclick="dig('*');"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="4" onclick="dig(4);"></td>
+          <td><input type="button" value="5" onclick="dig(5);"></td>
+          <td><input type="button" value="6" onclick="dig(6);"></td>
+          <td><input type="button" value="-" onclick="dig('-');"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="1" onclick="dig(1);"></td>
+          <td><input type="button" value="2" onclick="dig(2);"></td>
+          <td><input type="button" value="3" onclick="dig(3);"></td>
+          <td><input type="button" value="+" onclick="dig('+');"></td>
+        </tr>
+        <tr>
+          <td><input type="button" value="," onclick="dig('.');"></td>
+          <td><input type="button" value="0" onclick="dig(0);"></td>
+          <td colspan="2"><input id="equalBtn" type="button" value="=" onclick="ris();"></td>
+        </tr>
+      </table>
+    </form>
+  </div>
+
+  <div id="quote">
+    <p><span><i class="fa-solid fa-quote-left"></i></span> If all art aspires to the condition of music, all the sciences aspire to the condition of mathematics <span><i class="fa-solid fa-quote-right"></i></span>
+    </p>
+    <p><span>- George Santayana</span></p>
+    
+  </div>
+
+  <div id="footer">
+    <div class="musicFooter">
+      <p>&copy Pasquale Capuano</p>
+    </div>
+    <div id="controls" class="musicFooter">
+      <audio controls autoplay loop src="music/jazz.mp3"></audio>
+    </div>
+    <div id="social" class="musicFooter">
+      <a href="https://github.com/PasqualeCapuano" target="_blank"><i class="fa-brands fa-square-github"></i></a>
+      <a href="https://www.linkedin.com/in/pasquale-capuano/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+      <a href="https://www.instagram.com/the.real.capu/" target="_blank"><i class="fa-brands fa-square-instagram"></i></a> 
+      <a href="https://www.facebook.com/pasquale.capuano/" target="_blank"><i class="fa-brands fa-square-facebook"></i></a>
+    </div>
+
+  </div>
+
+  <script src="./assets/js/lightDark.js"></script>
+  <script src="./assets/js/script.js"></script>
+</body>
+
+</html>

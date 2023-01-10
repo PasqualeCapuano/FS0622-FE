@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+    flex-direction: column;
+    background-color: #5F7161;
+}
+
+main{
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px;
+}
+
+.container{
+    color: #fff;
+    width: 48%;
+    border-radius: 20px;
+    background-color: #6D8B74;
+}
+
+#display{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    text-align: center;
+}
+
+#comandi{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+input{
+    width: 50%;
+    text-align: end;
+    margin: 10px auto
+}
+
+input::placeholder{
+    text-align: end;
+}
+
+button{
+    margin: 0 auto;
+    width: 30%;
+}
+
+hr{
+    width: 50%;
+}
+
+/*---SECTION---*/
+
+section{
+    height: 45vh;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 10px 40px 10px 40px;
+    margin: 20px;
+    background-color: #6D8B74;
+    border-radius: 20px;
+    text-align: center;
+    font-size: 2em;
+    color: #fff;
+}
+ul li{
+    list-style: none;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1;
+  }
+  
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555;
+  }

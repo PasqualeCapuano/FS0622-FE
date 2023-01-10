@@ -1,0 +1,11 @@
+{
+  "name": "progetto-settimanale-7",
+  "version": "1.0.0",
+  "description": "Esterne al progetto -Prove con Waves animate -Aggiunta di AoS (Animate on Scroll) -Prove con Swiper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}

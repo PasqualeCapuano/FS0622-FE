@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="quizTime">
+        <div class="title">
+        <h1>Quiz Time</h1>
+        <p>Risolvi le seguenti operazioni matematiche</p>
+        </div>
+        <div class="quiz">
+        <div class="box">
+            <h4>Addizioni</h4>
+            <button class="myButton" onclick="getElementById('numberOne').value=Math.floor(Math.random()*100)">Aggiungi numero random</button>
+            <input type="text" id="numberOne" value="">
+            <p>+</p>
+            <button class="myButton" onclick="getElementById('numberTwo').value=Math.floor(Math.random()*100)">Aggiungi numero random</button>
+            <input type="text" id="numberTwo" value="">
+            <p>=</p>
+            <input type="text" placeholder="Risposta" id="answer1">
+
+            <button class="myButton" onclick="quizTimePlus()">INVIA</button>
+        </div>
+        <div class="box">
+            <h4>Sottrazioni</h4>
+            <button class="myButton" onclick="getElementById('numberThree').value=Math.floor(Math.random()*100)">Aggiungi numero random</button>
+            <input type="text" id="numberThree" value="">
+            <p>-</p>
+            <button class="myButton" onclick="getElementById('numberFour').value=Math.floor(Math.random()*100)">Aggiungi numero random</button>
+            <input type="text" id="numberFour" value="">
+            <p>=</p>
+            <input type="text" placeholder="Risposta" id="answer2">
+
+            <button class="myButton" onclick="quizTimeMinus()">INVIA</button>
+        </div>
+        <div class="box">
+            <h4>Moltiplicazioni</h4>
+            <button class="myButton" onclick="getElementById('numberFive').value=Math.floor(Math.random()*100)">Aggiungi numero random</button>
+            <input type="text" id="numberFive" value="">
+            <p>x</p>
+            <button class="myButton" onclick="getElementById('numberSix').value=Math.floor(Math.random()*100)">Aggiungi numero random</button>
+            <input type="text" id="numberSix" value="">
+            <p>=</p>
+            <input type="text" placeholder="Risposta" id="answer3">
+
+            <button class="myButton" onclick="quizTimeMultiply()">INVIA</button>
+        </div>
+        <div class="box">
+            <h4>Divisioni</h4>
+            <button class="myButton" onclick="getElementById('numberSeven').value=Math.floor(Math.random()*100)">Aggiungi numero random</button>
+            <input type="text" id="numberSeven" value="">
+            <p>÷</p>
+            <button class="myButton" onclick="getElementById('numberEight').value=Math.floor(Math.random()*10)">Aggiungi numero random</button>
+            <input type="text" id="numberEight" value="">
+            <p>=</p>
+            <input type="text" placeholder="Risposta" id="answer4">
+
+            <button class="myButton" onclick="quizTimeDivide()">INVIA</button>
+        </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
+
+</body>
+</html>

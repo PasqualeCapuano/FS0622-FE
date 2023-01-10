@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <title>Home</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+
+<body>
+    <main>
+        <div class="container">
+            <div id="display">
+                <div id="col1">
+                    <h1>Budget</h1>
+                    <h2 id="my-budget-display"></h2>
+                </div>
+                <div id="col1">
+                    <h1>Limit</h1>
+                    <h2 id="my-limit-display"></h2>
+                </div>
+                <div id="col1">
+                    <h1>Max Expense</h1>
+                    <h2 id="my-expense-display"></h2>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div id="comandi">
+                <h1>Fill in the form</h1>
+                <label for="budget">Insert your budget</label>
+                <input id="budget" type="text" placeholder="€ 0,00" required>
+                <label for="limit">Insert your budget limit</label>
+                <input id="limit" type="text" placeholder="€ 0,00" required>
+                <label for="expense-limit">Insert your expense limit</label>
+                <input id="expense-limit" type="text" placeholder="€ 0,00" required>
+                <button type="submit" id="submit-btn">Submit</button>
+            </div>
+        </div>
+    </main>
+
+    <section>
+        <h2>Transactions</h2>
+        <p id="display-espenses"></p>
+        
+    </section>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,15 @@
+{
+  "dependencies": {
+    "bootstrap": "^5.2.2",
+    "bootstrap-icons": "^1.9.1"
+  },
+  "name": "progetto-settimanale-5",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Pasquale Capuano",
+  "license": "ISC",
+  "description": "progetto della settimana 5 su bootstrap e SASS"
+}

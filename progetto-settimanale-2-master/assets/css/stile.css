@@ -1,0 +1,640 @@
+/* IMPOSTAZIONI GENERALI */
+html {
+    font-size: 62.5%;
+}
+
+body {
+    color: #000;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.5rem;
+    line-height: 1.8;
+}
+
+h1 {
+    font-size: 4rem;
+    line-height: 1.2;
+}
+
+h2 {
+    font-size: 3.5rem;
+    line-height: 1.1;
+}
+
+h3 {
+    line-height: 1;
+}
+
+a,
+i {
+    color: #e42424;
+}
+
+.bottone {
+    font-size: 1.9rem;
+    width: 300px;
+    border: none;
+    color: white;
+    background: #67e1fe;
+    background: linear-gradient(90deg, #6cc1e2, #392f7a);
+}
+
+header {
+    box-shadow: 0 0 1px #d3d3d3;
+    background-color: white;
+
+}
+
+footer {
+    background-color: rgb(238, 238, 238);
+}
+
+
+
+/* HEADER */
+header {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #fff;
+    align-items: flex-start;
+    box-shadow: 2px 15px 26px 1px rgb(168, 168, 168);
+}
+
+ul {
+    list-style: none;
+    display: flex;
+    flex-direction: row;
+
+}
+
+li {
+    margin-right: 20px;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+i {}
+
+.btn {
+    padding: 5px;
+    color: #fff;
+    width: fit-content;
+    background: linear-gradient(90deg, rgb(108, 193, 226) 0%, rgb(57, 47, 122) 90%);
+    font-size: 1rem;
+}
+
+
+#navTwo {
+    display: none;
+}
+
+#navOne a {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+.menuOne {
+    text-align: center;
+    width: 100%;
+    display: none;
+    text-align: start;
+
+}
+
+.menuOne a {
+    display: block;
+    margin: 0;
+}
+
+#toggle:checked+.menuOne {
+    display: block;
+    position: relative;
+    right: 350px;
+}
+
+label {
+    color: red;
+    display: block;
+    cursor: pointer;
+    text-align: end;
+    height: 50px;
+    margin-right: 20px;
+}
+
+#toggle {
+    display: none;
+
+}
+
+/* ---------------MAIN--------------- */
+main {
+    margin-bottom: 4em;
+}
+
+.form-container,
+main div:first-child {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main h2,
+main h1 {
+    padding-top: 1.5em;
+    padding-bottom: 0.7em;
+}
+
+main h1 {
+    font-size: 3em;
+}
+
+main form {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+}
+
+form input,
+form textarea {
+    margin-bottom: 1.7em;
+    padding: 1em;
+}
+
+form textarea {
+    height: 60px;
+}
+
+form input::placeholder,
+form textarea::placeholder {
+    font-style: italic;
+    padding: 0.3em;
+}
+
+.form-container input:last-child {
+    color: white;
+    margin: 0 auto;
+}
+
+
+/* ---------------HOMEPAGE--------------- */
+
+main .threeArticles {
+    text-align: center;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+/*------BUTTON ANIMATION------*/
+
+
+
+@keyframes lampeggio {
+    0%{box-shadow: 4px 4px 10px 5px #3f3f3f}
+    25%{box-shadow: 0px 4px 10px 5px #3f3f3f}
+    50%{box-shadow: -4px 0px 10px 5px #3f3f3f}
+    75%{box-shadow: 0px -4px 10px 5px #3f3f3f}
+    100%{box-shadow: 4px 4px 10px 5px #3f3f3f}
+    
+}
+
+#hero {
+    padding: 100px;
+    background-image: url("../images/banner.jpg");
+    background-position: center;
+    background-size: cover;
+    color: #fff;
+}
+
+#hero h1 {
+    text-shadow: 2px 2px 4px #000000;
+}
+
+#hero div{
+    animation: lampeggio 3s infinite linear;
+}
+.listEmoji {
+    margin: 0;
+}
+
+#bluStripe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+    background-color: #0C0633;
+    padding: 50px 0px 50px 0px;
+}
+
+#bottomInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#laptop {
+    width: 300px;
+    height: 300px;
+    background-image: url("../images/notebook.jpg");
+    background-position: center;
+    background-size: cover;
+}
+
+#btn {
+    width: 80px;
+    background: linear-gradient(90deg, rgb(108, 193, 226) 0%, rgb(57, 47, 122) 90%);
+    text-align: center;
+}
+
+.oneOne {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.listEmoji div i {
+    margin-bottom: 0;
+}
+
+
+
+.oneOne i {
+    margin-bottom: 0px;
+
+}
+
+.oneOne h2 {
+    padding: 0;
+}
+
+/* ---------------MAIN PAGINA CHI SIAMO--------------- */
+main {
+    font-size: 2.2rem;
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+
+
+.container {
+    justify-content: center;
+}
+
+.top {
+    margin-bottom: 150px;
+}
+
+.articoloMain {
+    margin:20px;
+    text-align: center;
+}
+.title h1 {
+    font-size: 6rem;
+    text-align: center;
+}
+
+.articoli {
+    margin:20px;
+    text-align: center;
+
+}
+
+.articolo1 img {
+    width: 100%;
+}
+
+.articolo1 {
+    margin-bottom:30px;
+}
+
+.articolo2 img {
+    width: 100%;
+}
+
+.tab1 {
+    margin:20px;
+
+
+}
+
+
+.tab1 h2{
+    margin:20px;
+    text-align: center;
+
+}
+.tab1 table {
+    font-size: 2rem;
+}
+
+
+.tab1 table .left {
+    width: 30%;
+    padding-left: 5px;
+    padding-right: 5px;
+    font-weight: bold;
+}
+
+.tab1 table .right {
+    width: 40%;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+tbody {
+    background-color: #d2dce7;
+}
+
+table .t4, table .t5, table .t6 {
+    background-color: white;
+
+}
+
+.tab2 {
+    display: none;
+}
+
+
+
+/* ---------------ADDRESS--------------- */
+section h2 {
+    /* font-size: 1.5em; */
+    text-align: center;
+    padding-top: 0.8em;
+}
+
+section p {
+    text-align: center;
+}
+
+section p:last-child {
+    padding: 0 3em;
+}
+
+/* ---------------Footer--------------- */
+footer {
+    padding: 3em;
+}
+
+footer h3 {
+    font-size: 1.5em;
+    margin-bottom: 1em;
+}
+
+footer p {
+    margin-bottom: 1em;
+}
+
+.lni {
+    color: #e42424;
+    ;
+    font-size: 2.5em;
+}
+
+footer form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+}
+
+footer input {
+    width: 300px;
+}
+
+footer input:last-child {
+    width: 331px;
+}
+
+
+
+
+
+/* --------------------RESPONSIVE--------------------- */
+@media screen and (min-width: 768px) {
+
+    #navOne {
+        display: none;
+    }
+
+    #navTwo {
+        display: flex;
+    }
+
+    #navTwo .btn {
+        padding: 10px;
+        font-size: 1.3rem;
+    }
+
+    #navTwo a {
+        padding: 10px;
+        margin-right: 20px;
+    }
+
+    .contatti-main {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contatti-flex {
+        display: flex;
+    }
+
+    .contatti-section1 {
+        width: 50%;
+    }
+
+    .contatti-section2 {
+        width: 50%;
+        margin-top: -30px;
+    }
+
+    .contatti-section2 h2 {
+        font-size: 2em;
+    }
+
+    footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    footer div {
+        width: 25%;
+        padding: 1em;
+        flex-grow: 1;
+    }
+
+    footer h3 {
+        font-size: 1.6em;
+    }
+
+    footer p {
+        font-size: 1.1em;
+    }
+
+    footer input {
+        width: 200px;
+    }
+
+    footer input:last-child {
+        width: 230px;
+    }
+
+    footer div:last-child {
+        display: flex;
+        justify-content: center;
+
+    }
+
+    #bottomInfo {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+
+    #info {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    #info p {
+        text-align: left;
+        font-size: 1.2rem;
+    }
+
+    #firstDiv {
+        width: 100%;
+    }
+
+    #secondDiv {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        ;
+    }
+
+    #secondDiv div {
+        width: 30%;
+    }
+
+    #secondDiv div i {
+        margin-bottom: 0;
+    }
+
+    #secondDiv h2 {
+        font-size: 2rem;
+    }
+
+
+    .oneOne {
+        display: flex;
+        flex-direction: row;
+
+    }
+
+    .oneOne i {
+        margin-bottom: 0px;
+
+    }
+
+    .oneOne h2 {
+        padding: 0;
+    }
+
+    
+    .articoli {
+        display: flex;
+        justify-content: space-around;
+        }
+
+    .articolo1 {
+        width: 49%;
+        
+    }
+    .articolo2 {
+        width: 49%;
+        
+    }
+
+    .articoloMain {
+        width: 98%;
+    }
+
+    .tab2 {
+        display: inline;
+        margin-left: 20px;
+        margin-right: 20px;
+    
+    }
+    
+    .tab1 {
+        display: none;
+    }
+
+    .tab2 table {
+        font-size: 2rem;
+        margin: 0 auto;
+        width: 95%;
+    
+
+
+    }
+    
+    .tab2 h2 {
+        text-align: center;
+    }
+    
+    .tab2 table th {
+        background-color: #5f82a3;
+        color: #fff;
+    }
+
+
+    .tab2 table th, .tab2 table td  {
+        padding: 10px;
+        text-align: center;
+    }
+    .tab2 table .left {
+        width: 30%;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-weight: bold;
+    }
+
+    tr:nth-child(odd) {
+        background-color: white;
+
+    }
+    
+    .tab2 table .right {
+        width: 40%;
+        padding-left: 5px;
+        padding-right: 5px;
+    }
+
+}
+
+
+
+@media screen and (min-width: 1170px) {
+
+
+    footer input {
+        width: 300px;
+        height: 50px;
+    }
+
+    footer input:last-child {
+        width: 331px;
+    }
+}

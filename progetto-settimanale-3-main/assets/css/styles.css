@@ -1,0 +1,339 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap');
+
+
+/*----------------------------ANIMATIONS--------------------------------*/
+
+@keyframes jello-horizontal {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, 0.75, 1);
+  }
+
+  40% {
+    transform: scale3d(0.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, 0.85, 1);
+  }
+
+  65% {
+    transform: scale3d(0.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, 0.95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+/*----------------------------MAIN CSS--------------------------------*/
+body {
+  transition: 0.3s;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(244, 241, 241);
+  font-family: Tahoma, sans-serif;
+  color: rgb(57, 57, 57);
+}
+
+h1 {
+  font-size: 70px;
+  line-height: 70px;
+  font-weight: 300;
+  margin: 10px 0;
+
+}
+
+h2 {
+  font-size: 40px;
+  line-height: 40px;
+  font-weight: 300;
+  margin: 50px 0 10px 0;
+
+}
+
+p {
+  margin: 0px;
+  font-size: 20px;
+
+}
+
+a {
+  color: #000000;
+  font-size: 20px;
+  text-decoration: none;
+  font-weight: 100;
+
+}
+
+.dark a {
+  color: #ffffff;
+}
+
+header {
+  display: flex;
+  justify-content: flex-end;
+  padding: 30px;
+}
+
+.switch {
+  width: 60px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: #212121;
+  position: relative;
+  animation: jello-horizontal 0.9s both;
+}
+
+.flicker {
+  width: 20px;
+  height: 20px;
+  border-radius: 15px;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 5px;
+  left: 5px;
+  transition: 0.3s;
+  box-shadow:
+    inset 4px 4px 4px rgb(255, 255, 255),
+    inset -4px -4px 4px rgb(195 193 198 / 90%);
+}
+
+.dark {
+  background-color: #181818;
+  transition: 0.3s;
+}
+
+.moon {
+  width: 15px;
+  height: 15px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 0 0 rgb(255, 255, 255);
+  position: absolute;
+  top: 4px;
+  left: 32px;
+}
+
+.dark .flicker {
+  transform: translateX(30px);
+}
+
+.dark>* {
+  color: rgb(255, 255, 255);
+}
+
+.main {
+  height: 80vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+}
+
+
+/*-----------------------CALCULATOR---------------------------*/
+#calc input {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  border: none;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 2em;
+  border-radius: 7px;
+  box-shadow: 0 7px 0px #363636;
+  display: inline-block;
+  transition: all .1s;
+  position: relative;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  background-image: url('../img/textureMetal.jpg');
+  background-size: cover;
+  background-blend-mode: color-burn;
+  color: #4e4e4e;
+
+}
+
+#calc input:active {
+  top: 3px;
+  box-shadow: 0 2px 0px #363636;
+  transition: all .1s;
+}
+
+#power {
+  font-family: 'Roboto Mono', sans-serif;
+  border-radius: 20px;
+  border: none;
+  border-radius: 7px;
+  box-shadow: 0 7px 0px #363636;
+  display: inline-block;
+  transition: all .1s;
+  position: relative;
+  position: relative;
+  top: 0;
+  cursor: pointer;
+  color: #a1a1a1;
+  margin-bottom: 15px;
+  margin-left: 5px;
+  background-color: red;
+
+}
+
+.area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  width: 96%;
+  height: 100px;
+  padding: 2px;
+  text-align: right;
+  font-size: 20px;
+  border: none;
+  border-radius: 2px 2px 2px 2px;
+  box-shadow: 0 7px 0px #363636;
+  background-image: url('../img/glass.png');
+  background-size: cover;
+  background-color: #000;
+  font-family: 'Roboto Mono', sans-serif;
+}
+
+
+#calcolatrice #cancTutto,
+#calcolatrice #equalBtn {
+  width: 100%;
+}
+
+#calcolatrice {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+form {
+  border-radius: 5px;
+  padding: 20px;
+  background: linear-gradient(0deg, rgba(22, 22, 46, 0.3), rgba(26, 26, 26, 0.3)), url('../img/textureMetal.jpg');
+  background-size: cover;
+  box-shadow: 4px 4px #000;
+}
+/*-----------------------QUOTE---------------------------*/
+
+span{
+  font-weight: bold;
+}
+
+#quote{
+  text-align: center;
+  padding: 40px;
+}
+
+/*-----------------------MUSIC---------------------------*/
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  background-color: rgb(241, 243, 244);
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.dark #footer {
+  background-color: rgb(28, 28, 28);
+  transition: 0.3s;
+}
+
+.musicFooter {
+  text-align: center;
+  width: 33%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+i {
+  font-size: 2em;
+  margin: 10px;
+}
+
+i:hover {
+  transition: 0.3s;
+  color: #363636;
+}
+
+.dark i:hover {
+  transition: 0.3s;
+  color: #acacac;
+}
+
+#controls {
+  width: 40%;
+  display: flex;
+
+}
+
+audio {
+  transition: 0.3s;
+  
+  padding: 10px;
+
+}
+
+.dark audio {
+  transition: 0.3s;
+  padding: 10px;
+}
+
+#social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+/*-----------------------BUTTONS---------------------------*/
+
+
+.btn-9:active {
+  top: 3px;
+  box-shadow: 0 2px 0px #387796;
+  transition: all .2s;
+}
+
+
+/*-----------------------RESPONSIVE---------------------------*/
+
+
+@media only screen and (max-width: 970px) {
+  .main-text {
+    width: 50%;
+  }
+
+  .square {
+    width: 48%;
+    margin: 1%;
+    height: 600px;
+  }
+
+  #footer{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1300px) {
+  .hero-image {
+    display: none;
+  }
+}

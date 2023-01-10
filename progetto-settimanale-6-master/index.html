@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gestione studenti</title>
+    <link href='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css' rel='stylesheet'
+        integrity='sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi' crossorigin='anonymous'>
+    <script src='https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js'
+        integrity='sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3'
+        crossorigin='anonymous'></script>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="assets/css/styele.css">
+</head>
+
+<body>
+
+    <header class="container-fluid bg-dark text-white d-flex justify-content-center p-3 mb-5">
+        <h2>Lista utenti dinamica</h2>
+    </header>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-5">
+                <h3 class="text-center mb-5">FORM DI INSERIMENTO DATI</h3>
+                <form id="form">
+                    <fieldset class="border border-dark p-4 ">
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="nome" class="form-label">NOME</label>
+                                <input type="text" id="nome" class="form-control">
+                            </div>
+                            <div class="col-6">
+                                <label for="cognome" class="form-label">COGNOME</label>
+                                <input type="text" id="cognome" class="form-control ">
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-6">
+                                <label for="img" class="form-label" >FOTO</label>
+                                <input type="text" id="img" class="form-control"  placeholder="foto">
+                            </div>
+                            <div class="col-6 d-flex align-items-end justify-content-start">
+                                <button type="button" class="btn btn-primary w-100" id="scrivi">INVIA</button>
+                            </div>
+                        </div>
+
+                    </fieldset>
+                </form>
+                <h4 id="errore"></h4>
+            </div>
+            <div class="col-md-7 ">
+                <h3 class="text-center mb-5">ELENCO</h3>
+                <p class="text-center text-danger" id="erroreElenco"></p>
+                <table class="table  table-striped">
+                    <thead>
+                        <th>Actions</th>
+                        <th>Utenti</th>
+                    </thead>
+                    <tbody id="elenco">
+                    </tbody>
+                </table>
+            </div>
+
+
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>

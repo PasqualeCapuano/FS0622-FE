@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout page</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <script src="https://kit.fontawesome.com/a214e0c9e7.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <section id="dropdown">
+        <button class="btn" onclick="toggleMenu()">Apri menu</button>
+        <div id="box-show" class="box-show">
+                <a href="#Home">Home</a>
+                <a href="#about">Chi sono</a>
+                <a href="#contatti">Contatti</a>
+        </div>
+    </section>
+
+    <section id="buttons">
+        <div class="resize">
+            <button class="my-button" id="btn-small">SMALL FONT</button>
+            <button class="my-button" id="btn-big">BIG FONT</button>
+        </div>
+        
+        <div class="resize">
+            <p id="font-size"></p>
+            <input type="range" min="1" max="5" value="1" class="slider" id="myRange">
+        </div>
+        <div class="resize">
+            <button class="my-button" id="btn-light">COLOR LIGHT</button>
+            <button class="my-button" id="btn-dark">COLOR DARK</button>
+        </div>
+        
+        <div class="resize">
+            <button class="my-button" id="btn3">UPPERCASE</button>
+            <button class="my-button" id="btn6">lowercase</button>
+        </div>
+        <div class="resize">
+            <button class="my-button" id="btn4">Hide</button>
+            <button class="my-button" id="btn5">Show</button>
+        </div>
+        
+    </section>
+
+    <hr>
+
+    <section id="display">
+        <h1 class="cambia"> Pagine Interattiva</h1>
+    </section>
+
+    <hr>
+
+    <section id="list">
+        <h2>LISTA IMPEGNI GIORNALIERI</h2>
+        <ul id="myList">
+            <li><i class="fa-solid fa-arrow-right"></i> lavare la macchina</li>
+            <li><i class="fa-solid fa-arrow-right"></i> andare dal dentista</li>
+            <li><i class="fa-solid fa-arrow-right"></i> palestra</li>
+            <li><i class="fa-solid fa-arrow-right"></i> spesa</li>
+        </ul>
+    </section>
+    
+    <script src="assets/js/script.js"></script>
+
+</body>
+
+</html>

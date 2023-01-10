@@ -1,0 +1,22 @@
+{
+  "elenco": [
+    {
+      "nome": "Pasquale",
+      "cognome": "Capuano",
+      "img": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "id": 1
+    },
+    {
+      "nome": "Pasquale",
+      "cognome": "cccc",
+      "img": "https://cdn-icons-png.flaticon.com/512/149/149071.png",
+      "id": 2
+    },
+    {
+      "nome": "sacva",
+      "cognome": "vcdsavasv",
+      "img": "https://scontent.fmxp9-1.fna.fbcdn.net/v/t39.30808-6/271973357_10226326827746111_2097025612227375150_n.jpg?_nc_cat=103&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=73gVLVQ-vsQAX-bES3H&_nc_ht=scontent.fmxp9-1.fna&oh=00_AfBJPyku8eARN4pQDbDqFHAc6MI-tseqiTZ5Oi45Q3UMxA&oe=637384C8",
+      "id": 3
+    }
+  ]
+}
