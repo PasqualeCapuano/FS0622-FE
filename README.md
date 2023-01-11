@@ -1,2 +1,2 @@
 # FS0622-FE
- Epicode repository Full Stack dev course
+ Epicode repository Front-End dev course
